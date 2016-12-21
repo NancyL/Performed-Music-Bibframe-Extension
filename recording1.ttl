@@ -45,11 +45,11 @@
       a bf:DescriptionConventions ;
       rdf:type "rda" ;
     ] ;
-bf:contribution [
-  a bf:Contribution ;
-  bf:role  <http://id.loc.gov/vocabulary/relators/cmp> ;
-  bf:agent <http://id.loc.gov/rwo/agents/n86140591> ;
-] ;
+	bf:contribution [
+  	a bf:Contribution ;
+  	bf:role  <http://id.loc.gov/vocabulary/relators/cmp> ;
+  	bf:agent <http://id.loc.gov/rwo/agents/n86140591> ;
+	] ;
   bf:contribution [
     a bf:Contribution ;
     bf:role   <http://id.loc.gov/vocabulary/relators/lbt> ;
@@ -68,7 +68,7 @@ bf:contribution [
   bf:contribution [
     a bf:Contribution ;
     bf:role <http://id.loc.gov/vocabulary/relators/prf> ;
-    bf:agent <http://id.loc.gov/rwo/agents/no2002006942> ;
+    bf:agent <http://id.loc.gov/rwo/agents/no2002006942> ;	
   ] ; 
   bf:contribution [
     a bf:Contribution ;
