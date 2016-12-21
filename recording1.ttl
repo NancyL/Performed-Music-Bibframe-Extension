@@ -15,9 +15,10 @@
 <Saariaho_event2>
   a bf:Event ; pmo:RecordingSession ;
   pmo:performanceOf <Saariaho_notatedwork1> ;
-  pmo:recordedAs <Saariaho_audiowork1> 
+  pmo:recordedAs <Saariaho_audiowork1> ;
+	pmo:recordedAs <Saariaho_videowork1> ;
   bf:date "2006-March" ;
-  bf:date "2008-October" 
+  bf:date "2008-October" ;
   bf:place <http://id.loc.gov/rwo/agents/n79059670> .
   
 <Saariaho_audiowork1> 
@@ -101,19 +102,19 @@ bf:contribution [
   rdfs:label "stereo" .
   
 <Saariaho_instance1>
-	a 	bf:Instance ;
-	bf:hasItem			<Saariaho_item1> ;
-	bf:adminMetadata	<Saariaho_admin1> ;
+  a  bf:Instance ;
+  bf:hasItem  <Saariaho_item1> ;
+  bf:adminMetadata  <Saariaho_admin1> ;
   bf:title [
     a  bf:Title ;
     bf:mainTitle "Amour de loin" ;
     pmo:origin [
         a pmo:Origin ;
-        rdf:type "container"
+        rdf:value "container"
       ] ;
     ]
   bf:responsibilityStatement "Kaija Saariaho" ;
-	bf:identifiedBy [
+ 	bf:identifiedBy [
 		a bf:MusicPublisherNumber ;
 		rdf:value "HMC 801937" ;
 	] ;
@@ -127,7 +128,7 @@ bf:contribution [
 	] ;
 	bf:provisionActivity [
 		a bf:ProvisionActivity, bf:Publication ;
-     		bf:agent <http://id.loc.gov/authorities/names/n90718974> ;
+    bf:agent <http://id.loc.gov/authorities/names/n90718974> ;
 		bf:date "2009" ;
 		bf:place <http://id.loc.gov/authorities/names/n81066146> ;
 	] ;
@@ -161,23 +162,38 @@ bf:contribution [
     a bf:Note ;
     rdf:value "These hybrid super audio CDs (stereo and multi-channel) can be played on any standard compact disc player." ;
   ] ;
+	
+<http://www.ld4p.org/ontologies.owl/performedMusic#MPS1.4> ;
+	a bf:SoundCharacteristic, bf:PlaybackChannels ;
+	rdfs:label "stereo" ;
 ] .
 
+<http://rdaregistry.info/termList/recMedium/1003> ;
+	a bf:SoundCharacteristic, bf:RecordingMedium ;
+	rdfs:value "optical" .
+	
+<http://rdaregistry.info/termList/fileType/1001> ;
+	a bf:SoundCharacteristic, bf:FileType ;
+	rdfs:value "audio file" .
 
+<http://www.ld4p.org/ontologies.owl/performedMusic#CdAudio> ;
+	a pmo:AudioDiscType ;
+	rdfs:value "CD audio" .
+	
 <Saariaho_item1>
 	a 	bf:Item ;
 	bf:adminMetadata	<Saariaho_admin1> ;
-	bf:heldBy			"CSt" ;
-	bf:barcode				"1234567890111" ;
-	bf:shelfmark			"MCD 19301" .
+	bf:heldBy       "CSt" ;
+	bf:barcode      "1234567890111" ;
+	bf:shelfmark	"MCD 19301" .
 
 <Saariaho_admin1>
 	bf:assigner			"nel" ;
-	bf:descriptionConventions 		"rda" ;
+	bf:descriptionConventions 	"rda" ;
 	bf:descriptionLanguage	[
-		a 				bf:Language ;
+		a 		bf:Language ;
 		bf:language 	<http://id.loc.gov/vocabulary/languages/eng> 
 		] ;
-	bf:creationdate		"2016-11-14". 	
+	bf:creationdate		"2016-12-20". 	
 
 	'''
