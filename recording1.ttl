@@ -8,19 +8,27 @@
 #This is a test record for the Performed Music Ontology, building off Amber's data. Obviously not ready for the big time!
 
 <Saariaho_event1>
-  a bf:Event ; pmo:Performance ;
+  a bf:Event ; pmo:FirstPerformance ;
+  bf:date "2000" ;
+  bf:place <http://id.loc.gov/rwo/agents/n80024359> .
+
+<Saariaho_event2>
+  a bf:Event ; pmo:RecordingSession ;
   pmo:performanceOf <Saariaho_notatedwork1> ;
-  pmo:recordedAs <Saariaho_audiowork1> .
+  pmo:recordedAs <Saariaho_audiowork1> 
+  bf:date "2006-March" ;
+  bf:date "2008-October" 
+  bf:place <http://id.loc.gov/rwo/agents/n79059670> .
   
 <Saariaho_audiowork1> 
 	a bf:Work, bf:Audio ;
   bf:content <http://id.loc.gov/vocabulary/contentTypes/prm> ;
-	pmo:recordingOf <Saariaho_event1> ;
+  pmo:recordingOf <Saariaho_event2> ;
   bf:capture [
     a bf:Capture ;
     bf:date "2006-March" ;
     bf:date "2008-October ;
-    bf:place <http://id.loc.gov/authorities/names/n79059670> ;
+    bf:place <http://id.loc.gov/rwo/agents/n79059670> ;
   ] ;
   bf:hasInstance <Saariaho_inst1> ;
   bf:hasInstance <Saariaho_inst2> ;
@@ -32,11 +40,11 @@
       a bf:DescriptionConventions
       rdf:type "rda" ;
     ] ;
-	bf:contributor [
-		a bf:Contribution ;
-		bf:role	 <http://id.loc.gov/vocabulary/relators/cmp> ;
-		bf:agent <http://id.loc.gov/rwo/agents/n86140591>
-	] ;
+bf:contribution [
+  a bf:Contribution ;
+  bf:role  <http://id.loc.gov/vocabulary/relators/cmp> ;
+  bf:agent <http://id.loc.gov/rwo/agents/n86140591>
+] ;
   bf:contribution [
     a bf:Contribution ;
     bf:role   <http://id.loc.gov/vocabulary/relators/lbt> ;
@@ -68,10 +76,6 @@
   bf:soundCharacteristic  <http://rdaregistry.info/termList/typeRec/1001> ;
   bf:soundCharacteristic  <http://rdaregistry.info/termList/configPlayback/1002> .
   
-<description_1>
-  a bf:AdminMetadata ;
-  rdfs:label "rda" .
-
 <http://id.loc.gov/rwo/agents/n86140591>
   a bf:Agent, bf:Person ;
   rdfs:label "Saariaho, Kaija" .
@@ -123,7 +127,7 @@
 	] ;
 	bf:provisionActivity [
 		a bf:ProvisionActivity, bf:Publication ;
-    bf:agent <http://id.loc.gov/authorities/names/n90718974> ;
+     		bf:agent <http://id.loc.gov/authorities/names/n90718974> ;
 		bf:date "2009" ;
 		bf:place <http://id.loc.gov/authorities/names/n81066146> ;
 	] ;
