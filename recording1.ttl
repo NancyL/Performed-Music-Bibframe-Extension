@@ -12,6 +12,10 @@
   bf:date "2000" ;
   bf:place <http://id.loc.gov/rwo/agents/n80024359> .
 
+<http://id.loc.gov/rwo/agents/n80024359>
+	a bf:Place ;
+	rdfs:label "Salzburg (Austria)" .
+
 <Saariaho_event2>
   a bf:Event ; pmo:RecordingSession ;
   pmo:performanceOf <Saariaho_notatedwork1> ;
@@ -22,7 +26,7 @@
   bf:place <http://id.loc.gov/rwo/agents/n79059670> .
   
 <Saariaho_audiowork1> 
-	a bf:Work, bf:Audio ;
+  a bf:Work, bf:Audio ;
   bf:content <http://id.loc.gov/vocabulary/contentTypes/prm> ;
   pmo:recordingOf <Saariaho_event2> ;
   bf:capture [
@@ -38,13 +42,13 @@
     a bf:Title ; pmo:DevisedTitle ;
     rdfs:label "Amour de loin. 2006" ;
     bf:descriptionConventions [
-      a bf:DescriptionConventions
+      a bf:DescriptionConventions ;
       rdf:type "rda" ;
     ] ;
 bf:contribution [
   a bf:Contribution ;
   bf:role  <http://id.loc.gov/vocabulary/relators/cmp> ;
-  bf:agent <http://id.loc.gov/rwo/agents/n86140591>
+  bf:agent <http://id.loc.gov/rwo/agents/n86140591> ;
 ] ;
   bf:contribution [
     a bf:Contribution ;
@@ -72,34 +76,50 @@ bf:contribution [
     bf:agent <http://id.loc.gov/rwo/agents/n84053957> ;
   ] ; 
   pmo:phonogramCopyrightDate  "2006" ;
-	bf:genreForm	<http://id.loc.gov/authorities/genreForms/gf2014026976> ;
-	bf:language   <http://id.loc.gov/vocabulary/languages/fre> ;
+  bf:genreForm	<http://id.loc.gov/authorities/genreForms/gf2014026976> ;
+  bf:language   <http://id.loc.gov/vocabulary/languages/fre> ;
   bf:soundCharacteristic  <http://rdaregistry.info/termList/typeRec/1001> ;
   bf:soundCharacteristic  <http://rdaregistry.info/termList/configPlayback/1002> .
   
-<http://id.loc.gov/rwo/agents/n86140591>
+<http://id.loc.gov/rwo/agents/n86140591> ;
   a bf:Agent, bf:Person ;
   rdfs:label "Saariaho, Kaija" .
   
-<http://id.loc.gov/rwo/agents/n85016331>
+<http://id.loc.gov/rwo/agents/n85016331> ;
   a bf:Agent, bf:Person ;
   rdfs:label "Maalouf, Amin" .
+		
+<http://id.loc.gov/rwo/agents/no2009113382> ;
+		a bf:Agent, bf:Person ;
+		rdfs:label "Lehkina, Ekaterina" .
+		
+<http://id.loc.gov/rwo/agents/no97001965> ;
+		a bf:Agent, bf:Person ;
+		rdfs:label "Todorovitch, Marie-Ange" .
+		
+<http://id.loc.gov/rwo/agents/no2002006942> ;
+		a bf:Agent, bf:Person ;
+		rdfs:label "Belcher, Daniel" .
+		
+<http://id.loc.gov/rwo/agents/n84053957> ;
+		a bf:Agent, bf:Person ;
+		rdfs:label "Nagano, Kent, 1951-" .
   
-<http://id.loc.gov/authorities/genreForms/gf2014026976>
+<http://id.loc.gov/authorities/genreForms/gf2014026976> ;
   a bf:GenreForm ;
   rdfs:label "Operas" .
   
-<http://id.loc.gov/vocabulary/languages/fre>
+<http://id.loc.gov/vocabulary/languages/fre> ;
   a bf:Language ;
   rdfs:label "French" .
   
-<http://rdaregistry.info/termList/typeRec/1001> 
+<http://rdaregistry.info/termList/typeRec/1001> ;
   a bf:RecordingMedium ;
-  rdfs:label "analog" .
+  rdfs:value "analog" .
   
-<http://rdaregistry.info/termList/configPlayback/1002>
+<http://rdaregistry.info/termList/configPlayback/1002> ;
   a bf:PlaybackCharacteristic ;
-  rdfs:label "stereo" .
+  rdfs:value "stereo" .
   
 <Saariaho_instance1>
   a  bf:Instance ;
@@ -110,15 +130,15 @@ bf:contribution [
     bf:mainTitle "Amour de loin" ;
     pmo:origin [
         a pmo:Origin ;
-        rdf:value "container"
+        rdf:value "container" ;
       ] ;
     ]
   bf:responsibilityStatement "Kaija Saariaho" ;
- 	bf:identifiedBy [
+   bf:identifiedBy [
 		a bf:MusicPublisherNumber ;
 		rdf:value "HMC 801937" ;
 	] ;
-	bf:identifiedBy [
+  bf:identifiedBy [
 		a bf:MusicPublisherNumber ;
 		rdf:value "HMC 801938" ;
 	] ;
@@ -128,7 +148,7 @@ bf:contribution [
 	] ;
 	bf:provisionActivity [
 		a bf:ProvisionActivity, bf:Publication ;
-    bf:agent <http://id.loc.gov/authorities/names/n90718974> ;
+    		bf:agent <http://id.loc.gov/authorities/names/n90718974> ;
 		bf:date "2009" ;
 		bf:place <http://id.loc.gov/authorities/names/n81066146> ;
 	] ;
@@ -161,7 +181,7 @@ bf:contribution [
   bf:note [
     a bf:Note ;
     rdf:value "These hybrid super audio CDs (stereo and multi-channel) can be played on any standard compact disc player." ;
-  ] ;
+] ;
 	
 <http://www.ld4p.org/ontologies.owl/performedMusic#MPS1.4> ;
 	a bf:SoundCharacteristic, bf:PlaybackChannels ;
