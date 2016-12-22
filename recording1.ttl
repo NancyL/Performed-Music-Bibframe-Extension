@@ -9,7 +9,7 @@
 
 <Saariaho_event1>
   a bf:Event ; pmo:FirstPerformance ;
-  bf:date "2000" ;
+  bf:date "2000 August 15" ;
   bf:place <http://id.loc.gov/rwo/agents/n80024359> .
 
 <http://id.loc.gov/rwo/agents/n80024359>
