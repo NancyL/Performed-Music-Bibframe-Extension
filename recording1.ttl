@@ -4,6 +4,7 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe.rdf> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix pmo: <http://ld4p.org/ontologies/pmo.rdf> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
 
 
 #This is a test record for the Performed Music Ontology, building off Amber's data. Obviously not ready for the big time!
@@ -55,7 +56,7 @@
   bf:content <http://id.loc.gov/vocabulary/contentTypes/prm> ;
   pmo:recordingOf <Saariaho_event2> ; 
 	bf:expressionOf <Saariaho_notatedwork1> ;
-	bf:relatedTo <Maalouf_work1> ;
+	rdau:P60270 <Maalouf_work1> ;
   bf:capture [
     a bf:Capture ;
     bf:date "2006-March" ;
