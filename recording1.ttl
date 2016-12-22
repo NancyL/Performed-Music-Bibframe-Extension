@@ -95,6 +95,16 @@
     bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
     bf:agent <http://id.loc.gov/rwo/agents/n84053957> ;
   ] ; 
+	bf:contribution [
+    a bf:Contribution ;
+    bf:role <http://id.loc.gov/vocabulary/relators/prf> ;
+    bf:agent <http://id.loc.gov/rwo/agents/n98061142> ;
+  ] ; 
+	bf:contribution [
+    a bf:Contribution ;
+    bf:role <http://id.loc.gov/vocabulary/relators/prf> ;
+    bf:agent <http://id.loc.gov/rwo/agents/n98110880> ;
+  ] ; 
   pmo:phonogramCopyrightDate  "2006" ;
   bf:genreForm	<http://id.loc.gov/authorities/genreForms/gf2014026976> ;
   bf:language   <http://id.loc.gov/vocabulary/languages/fre> ;
@@ -124,6 +134,14 @@
 <http://id.loc.gov/rwo/agents/n84053957> ;
 		a bf:Agent, bf:Person ;
 		rdfs:label "Nagano, Kent, 1951-" .
+		
+<http://id.loc.gov/rwo/agents/n98061142> ;
+		a bf:Agent, bf:Organization ;
+		rdfs:label "Deutsches Symphonie-Orchester Berlin" .
+		
+<http://id.loc.gov/rwo/agents/n98110880> ;
+		a bf:Agent, bf:Organization ;
+		rdfs:label "Rundfunkchor Berlin" .
   
 <http://id.loc.gov/authorities/genreForms/gf2014026976> ;
   a bf:GenreForm ;
