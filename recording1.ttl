@@ -8,20 +8,24 @@
 
 #This is a test record for the Performed Music Ontology, building off Amber's data. Obviously not ready for the big time!
 
-<Saariaho_event1>
+<#Saariaho_event1>
   a bf:Event ; pmo:FirstPerformance ;
   bf:date "2000 August 15" ;
-  bf:place <http://id.loc.gov/rwo/agents/n80024359> .
+  bf:place <http://id.loc.gov/rwo/agents/n80024359> 
+	bf:place [
+		a bf:Place ;
+		rdfs:label "Felsenreitschule" ;
+	].
 
 <http://id.loc.gov/rwo/agents/n80024359>
 	a bf:Place ;
 	rdfs:label "Salzburg (Austria)" .
 
-<Saariaho_event2>
+<#Saariaho_event2>
   a bf:Event ; pmo:RecordingSession ;
-  pmo:performanceOf <Saariaho_notatedwork1> ;
-  pmo:recordedAs <Saariaho_audiowork1> ;
-	pmo:recordedAs <Saariaho_videowork1> ;
+  pmo:performanceOf <#Saariaho_notatedwork1> ;
+  pmo:recordedAs <#Saariaho_audiowork1> ;
+	pmo:recordedAs <#Saariaho_videowork1> ;
 	pmo:sessionPart [
 		a pmo:SessionPart ;
   	bf:date "2006 March" ;
@@ -46,7 +50,7 @@
 	a bf:Place ;
 	rdfs:label "Munich (Germany) .
   
-<Saariaho_audiowork1> 
+<#Saariaho_audiowork1> 
   a bf:Work, bf:Audio ;
   bf:content <http://id.loc.gov/vocabulary/contentTypes/prm> ;
   pmo:recordingOf <Saariaho_event2> ; 
@@ -183,7 +187,7 @@
   a bf:PlaybackCharacteristic ;
   rdfs:value "stereo" .
   
-<Saariaho_instance1>
+<#Saariaho_instance1>
   a  bf:Instance ;
   bf:hasItem  <Saariaho_item1> ;
   bf:adminMetadata  <Saariaho_admin1> ;
@@ -262,9 +266,9 @@
 	a pmo:AudioDiscType ;
 	rdfs:value "CD audio" .
 	
-<Saariaho_item1>
+<#Saariaho_item1>
 	a 	bf:Item ;
-	bf:adminMetadata	<Saariaho_admin1> ;
+	bf:adminMetadata	<#Saariaho_admin1> ;
 	bf:heldBy       "CSt" ;
 	bf:barcode      "1234567890111" ;
 	bf:shelfmark	"MCD 19301" .
