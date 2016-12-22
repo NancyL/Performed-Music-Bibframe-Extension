@@ -74,8 +74,8 @@
     ] ;
 	bf:contribution [
   	a bf:Contribution ;
-  	bf:role  <http://id.loc.gov/vocabulary/relators/cmp> ;
   	bf:agent <http://id.loc.gov/rwo/agents/n86140591> ;
+		bf:role  <http://id.loc.gov/vocabulary/relators/cmp> ;
 	] ;
   bf:contribution [
     a bf:Contribution ;
@@ -221,7 +221,7 @@
 	bf:extent	"2 audio discs" ;
 	bf:dimensions "4 3/4 in." ;
   bf:media <http://id.loc.gov/vocabulary/mediaTypes/s> ;
-  bf:carrier <http://id.loc.gov/vocabulary/carriers/sd> ;
+  bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1004> ;
   
   <http://id.loc.gov/authorities/names/n90718974> [
     a  bf:Agent, bf:Organization ;
@@ -236,7 +236,7 @@
   a bf:Media ;
   rdfs:label "audio" ;
   
-<http://id.loc.gov/vocabulary/carriers/sd> ;
+<http://rdaregistry.info/termList/RDACarrierType/1004> ;
   a bf:Carrier ;
   rdfs:label "audio disc" ;
   bf:soundCharacteristic <http://www.ld4p.org/ontologies.owl/performedMusic#MPS1.4> ;
