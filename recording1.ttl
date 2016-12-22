@@ -21,9 +21,29 @@
   pmo:performanceOf <Saariaho_notatedwork1> ;
   pmo:recordedAs <Saariaho_audiowork1> ;
 	pmo:recordedAs <Saariaho_videowork1> ;
-  bf:date "2006-March" ;
-  bf:date "2008-October" ;
-  bf:place <http://id.loc.gov/rwo/agents/n79059670> .
+	pmo:sessionPart [
+		a pmo:SessionPart ;
+  	bf:date "2006 March" ;
+		bf:place <http://id.loc.gov/rwo/agents/n79059670> ;
+		bf:place <https://wikidata.org/entity/Q7695694> ;
+	] .
+  pmo:sessionPart ;
+		a pmo:SessionPart ;
+		bf:date "2008 October" ;
+  	bf:place <http://id.loc.gov/rwo/agents/n79059670> ;
+	] .
+
+<http://id.loc.gov/rwo/agents/n79059670> ;
+	a bf:Place ;
+	rdfs:label "Berlin (Germany) .
+
+<https://wikidata.org/entity/Q7695694> ;
+	a bf:Place ;
+	rdfs:label "Teldex Studio" .
+
+<http://id.loc.gov/rwo/agents/n79059670> ;
+	a bf:Place ;
+	rdfs:label "Munich (Germany) .
   
 <Saariaho_audiowork1> 
   a bf:Work, bf:Audio ;
