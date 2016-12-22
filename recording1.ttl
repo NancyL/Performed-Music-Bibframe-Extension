@@ -12,7 +12,7 @@
 <#Saariaho_event1>
   a bf:Event ; pmo:FirstPerformance ;
   bf:date "2000 August 15" ;
-  bf:place <http://id.loc.gov/rwo/agents/n80024359> 
+  bf:place <http://id.loc.gov/rwo/agents/n80024359> ;
 	bf:place [
 		a bf:Place ;
 		rdfs:label "Felsenreitschule" ;
