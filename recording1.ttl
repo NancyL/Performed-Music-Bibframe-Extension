@@ -2,7 +2,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix bf: <http://id.loc.gov/ontologies/bibframe.rdf> .
-@prefix pmo: <http://ld4p.org/ontologies/pmo.rdf>
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pmo: <http://ld4p.org/ontologies/pmo.rdf> .
 
 
 #This is a test record for the Performed Music Ontology, building off Amber's data. Obviously not ready for the big time!
@@ -56,7 +57,7 @@
     bf:place <http://id.loc.gov/rwo/agents/n79059670> ;
   ] ;
   bf:hasInstance <Saariaho_inst1> ;
-  bf:hasInstance <Saariaho_inst2> ;
+ 	bf:hasInstance <Saariaho_inst2> ;
 	bf:adminMetadata <Saariaho_admin1> ;
 	bf:title [
     a bf:Title ; pmo:DevisedTitle ;
@@ -107,6 +108,7 @@
   ] ; 
   pmo:phonogramCopyrightDate  "2006" ;
   bf:genreForm	<http://id.loc.gov/authorities/genreForms/gf2014026976> ;
+	dcterms:subject <http://id.loc.gov/rwo/agents/n79133112> ;
   bf:language   <http://id.loc.gov/vocabulary/languages/fre> ;
   bf:soundCharacteristic  <http://rdaregistry.info/termList/typeRec/1001> ;
   bf:soundCharacteristic  <http://rdaregistry.info/termList/configPlayback/1002> .
@@ -146,6 +148,10 @@
 <http://id.loc.gov/authorities/genreForms/gf2014026976> ;
   a bf:GenreForm ;
   rdfs:label "Operas" .
+		
+<http://id.loc.gov/rwo/agents/n79133112> ;
+	a bf:Agent, bf:Person ;
+	rdfs:label "Jaufre Rudel, active 12th century .
   
 <http://id.loc.gov/vocabulary/languages/fre> ;
   a bf:Language ;
