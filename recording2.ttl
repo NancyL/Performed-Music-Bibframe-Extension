@@ -11,7 +11,7 @@
 
 Thematic catalog number.
 
-<#Mozart_audiowork1> 
+<#Paganini_audiowork1> 
   a bf:Work, bf:Audio ;
   bf:content <http://id.loc.gov/vocabulary/contentTypes/prm> ;
  	bf:title [
