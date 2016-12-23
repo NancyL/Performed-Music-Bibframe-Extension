@@ -215,7 +215,7 @@
 	] ;
 	bf:provisionActivity [
 		a bf:ProvisionActivity, bf:Publication ;
-    		bf:agent <http://id.loc.gov/authorities/names/n90718974> ;
+		bf:agent <http://id.loc.gov/authorities/names/n90718974> ;
 		bf:date "2009" ;
 		bf:place <http://id.loc.gov/authorities/names/n81066146> ;
 	] ;
