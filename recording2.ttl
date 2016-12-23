@@ -63,8 +63,8 @@ Thematic catalog number.
 		pmo:hasOpusNumberPart ;
 			a pmo:OpusNumberPart ;
 			rdfs:label "3" ;
-		] .
-	] ;
+		] ;
+	] .
 	
 
  
