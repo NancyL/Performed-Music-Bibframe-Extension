@@ -45,6 +45,27 @@ Thematic catalog number.
   
   ] .
     
- 
+ Opus number
+	
+<beethoven_work1> ;
+	a bf:Work ;
+	bf:title [
+		a bf:Title ;
+		rdfs:label "Sonatas, piano, no. 7, op. 10, no. 3, D major" ;
+	] ;
+	pmo:identifiedBy [
+		a bf:Identifier, pmo:OpusNumberStatement ;
+		rdfs:label "Op. 10, no. 3" ;
+		pmo:hasOpusNumber [
+			a pmo:OpusNumber ;
+			rdfs:label "10" ;
+		] ;
+		pmo:hasOpusNumberPart ;
+			a pmo:OpusNumberPart ;
+			rdfs:label "3" ;
+		] .
+	] ;
+	
+
  
 	
