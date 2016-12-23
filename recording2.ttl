@@ -1,1 +1,50 @@
+@base <http://library.edu/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe.rdf> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pmo: <http://ld4p.org/ontologies/pmo.rdf> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
 
+
+#This is a test record for the Performed Music Ontology, building off Amber's data. Obviously not ready for the big time!
+
+Thematic catalog number.
+
+<#Mozart_audiowork1> 
+  a bf:Work, bf:Audio ;
+  bf:content <http://id.loc.gov/vocabulary/contentTypes/prm> ;
+ 	bf:title [
+    a bf:Title ; pmo:DevisedTitle ;
+    rdfs:label "Caprices, violin, M.S. 44, G major" ;
+    bf:descriptionConventions [
+      a bf:DescriptionConventions ;
+      rdf:type "rda" ;
+    ] ;
+ pmo:identifiedBy [
+    a bf:Identifier, pmo:ThematicCatalogStatement ;
+    rdfs:label "M.S. 44" ;
+    pmo:composedOf [
+      a bf:ThematicCatalogPrefix ;
+      rdfs:label "M.S." ;
+    ] ;
+    pmo:composedOf [
+      a bf:ThematicCatalogNumber ;
+      rdfs:label "44" ;
+    ] ;
+ pmo:keyMode [
+   a pmo:KeyModeStatement ;
+   rdfs:label "G major" ;
+   pmo:key [
+     a pmo:Key ;
+     rdfs:value "G" 
+   ] ;
+   pmo:mode [
+     a pmo:Mode ;
+     rdfs:value "major" .
+  
+  ] .
+    
+ 
+ 
+	
