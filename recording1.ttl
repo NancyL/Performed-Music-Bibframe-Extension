@@ -10,7 +10,7 @@
 #This is a test record for the Performed Music Ontology, building off Amber's data. Obviously not ready for the big time!
 
 <#Saariaho_event1>
-  a bf:Event ; pmo:FirstPerformance ;
+  a bf:Event, pmo:FirstPerformance ;
   bf:date "2000 August 15" ;
   bf:place <http://id.loc.gov/rwo/agents/n80024359> ;
 	bf:place [
