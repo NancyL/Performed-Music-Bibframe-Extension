@@ -1,0 +1,113 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch> a skos:ConceptScheme ;
+	rdfs:comment "Pitch center without mode" .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/C> a skos:Concept ;
+	skos:prefLabel "C"@en ;
+	skos:prefLabel "Do"@fr , "Do"@it , "Do"@es , "C"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+	
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Cf> a skos:Concept ;
+	skos:prefLabel "C flat"@en ;
+	skos:prefLabel "Do bémol"@fr , "Do bemolle"@it , "Do bemol"@es , "Ces"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+  
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Cs> a skos:Concept ;
+	skos:prefLabel "C sharp"@en ;
+	skos:prefLabel "Do dièse"@fr , "Do diesis"@it , "Do sostenido"@es , "Cis"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+  
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/D> a skos:Concept ;
+	skos:prefLabel "D"@en ;
+	skos:prefLabel "Ré"@fr , "Re"@it , "R"@es , "D"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Db> a skos:Concept ;
+	skos:prefLabel "D flat"@en ;
+	skos:prefLabel "Ré bémol"@fr , "Re bemolle"@it , "R bemol"@es , "Des"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Ds> a skos:Concept ;
+	skos:prefLabel "D sharp"@en ;
+	skos:prefLabel "Ré dièse"@fr , "Re diesis"@it , "R sostenido"@es , "Dis"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/E> a skos:Concept ;
+	skos:prefLabel "E"@en ;
+	skos:prefLabel "Mi"@fr , "Mi"@it , "Mi"@es , "E"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+	
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Eb> a skos:Concept ;
+	skos:prefLabel "E flat"@en ;
+	skos:prefLabel "Mi bémol"@fr , "Mi bemolle"@it , "Mi bemol"@es , "Es"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Es> a skos:Concept ;
+	skos:prefLabel "E sharp"@en ;
+	skos:prefLabel "Mi dièse"@fr , "Mi diesis"@it , "Mi sostenido"@es , "Eis"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/F> a skos:Concept ;
+	skos:prefLabel "F"@en ;
+	skos:prefLabel "Fa"@fr , "Fa"@it , "Fa"@es , "F"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+	
+ <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Fb> a skos:Concept ;
+	skos:prefLabel "F flat"@en ;
+	skos:prefLabel "Fa bémol"@fr , "Fa bemolle"@it , "Fa bemol"@es , "Fes"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+  
+ <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Fs> a skos:Concept ;
+	skos:prefLabel "F sharp"@en ;
+	skos:prefLabel "Fa dièse"@fr , "Fa diesis"@it , "Fa sostenido"@es , "Fis"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+	
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/G> a skos:Concept ;
+	skos:prefLabel "G"@en ;
+	skos:prefLabel "Sol"@fr , "Sol"@it , "Sol"@es , "G"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+		
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Gb> a skos:Concept ;
+	skos:prefLabel "G flat"@en ;
+  skos:prefLabel "Sol bémol"@fr , "Sol bemolle"@it , "Sol bemol"@es , "Ges"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Gs> a skos:Concept ;
+	skos:prefLabel "G sharp"@en ;
+	skos:prefLabel "Sol dièse"@fr , "Sol diesis"@it , "Sol sostenido"@es , "Gis"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+  
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/A> a skos:Concept ;
+	skos:prefLabel "A"@en ;
+	skos:prefLabel "La"@fr , "La"@it , "La"@es , "A"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Ab> a skos:Concept ;
+	skos:prefLabel "A flat"@en ;
+	skos:prefLabel "La bémol"@fr , "La bemolle"@it , "La bemol"@es , "As"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/As> a skos:Concept ;
+	skos:prefLabel "A sharp"@en ;
+	skos:prefLabel "La dièse"@fr , "La diesis"@it , "La sostenido"@es , "Ais"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/B> a skos:Concept ;
+	skos:prefLabel "B"@en ;
+	skos:prefLabel "Si"@fr , "Si"@it , "Si"@es , "H"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Bb> a skos:Concept ;
+	skos:prefLabel "B flat"@en ;
+	skos:prefLabel "Si bémol"@fr , "Si bemolle"@it , "Si bemol"@es , "B"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
+
+<http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/Bs> a skos:Concept ;
+	skos:prefLabel "B sharp"@en ;
+	skos:prefLabel "Si dièse"@fr , "Si diesis"@it , "Si sostenido"@es , "H"@de ;
+	skos:topConceptOf <http://http://www.ld4p.org/ontologies.owl/performedMusic/vocabulary/pitch/> .
