@@ -1,0 +1,203 @@
+@base <http://library.edu/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe.rdf> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pmo: <http://ld4p.org/ontologies/pmo.rdf> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+
+
+#This is a test record for the Performed Music Ontology.
+<#Mozart_event1>
+  a bf:Event, pmo:Performance ;
+  bf:date "1980" .
+
+<#Mozart_audiowork1> 
+  a bf:Work, bf:Audio ;
+  bf:content <http://id.loc.gov/vocabulary/contentTypes/prm> ;
+  pmo:recordingOf <Mozart_event1> ; 
+	bf:expressionOf <Mozart_notatedwork1> ;
+	bf:capture [
+    a bf:Capture ;
+    bf:date "1980" ;
+    ] .
+  bf:hasInstance <Mozart_inst1> ;
+ 	bf:adminMetadata <Mozart_admin1> ;
+	bf:title [
+    a bf:Title ; pmo:DevisedTitle ;
+    rdfs:label "Clarinet concerto. 1980" ;
+    bf:descriptionConventions [
+      a bf:DescriptionConventions ;
+      rdf:type "rda" ;
+    ] ;
+	bf:contribution [
+  	a bf:Contribution ;
+  	bf:agent <http://id.loc.gov/rwo/agents/n80022788> ;
+		bf:role  <http://id.loc.gov/vocabulary/relators/cmp> ;
+   	] ;
+  bf:contribution [
+    a bf:Contribution ;
+    bf:agent  <http://id.loc.gov/rwo/agents/n81139111> ;
+		bf:role   <http://id.loc.gov/vocabulary/relators/prf> ;
+    pmo:meansOfContribution <http://id.loc.gov/authorities/performanceMediums/mp2013015154> ;
+  ] ;
+  bf:contribution [
+    a bf:Contribution ;
+    bf:agent <http://id.loc.gov/rwo/agents/n81012364> ;
+		bf:role  <http://id.loc.gov/vocabulary/relators/prf> ;
+    pmo:meansOfContribution <http://id.loc.gov/authorities/performanceMediums/mp2013015516> ;
+  ] ;
+  bf:contribution [
+    a bf:Contribution ;
+    bf:agent <http://id.loc.gov/rwo/agents/n81139112>
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+  ] ;
+  
+  pmo:phonogramCopyrightDate  "1981" ;
+  bf:genreForm	<http://id.loc.gov/authorities/genreForms/gf2014026725> ;
+  bf:language   <http://id.loc.gov/vocabulary/languages/zxx> ;
+  bf:soundCharacteristic  <http://rdaregistry.info/termList/typeRec/1001> ;
+  bf:soundCharacteristic  <http://rdaregistry.info/termList/configPlayback/1002> .
+  
+<http://id.loc.gov/rwo/agents/n80022788> 
+  a bf:Agent, bf:Person ;
+  rdfs:label "Mozart, Wolfgang Amadeus, 1756-1791" .
+  
+<http://id.loc.gov/rwo/agents/n81139111> 
+  a bf:Agent, bf:Person ;
+  rdfs:label "Stoltzman, Richard" .
+		
+<http://id.loc.gov/rwo/agents/n81012364> 
+		a bf:Agent, bf:Organization ;
+		rdfs:label "English Chamber Orchestra" .
+    
+<http://id.loc.gov/rwo/agents/n81139112>
+   a bf:Agent, bf:Person ;
+   rdfs:label "Schneider, Alexander, 1908-1003" .
+		
+<http://id.loc.gov/vocabulary/relators/cmp> ;
+		a bf:Role ;
+		rdfs:label "composer" .
+
+<http://id.loc.gov/vocabulary/relators/prf> ;
+		a bf:Role ;
+		rdfs:label "performer" .
+
+<http://id.loc.gov/vocabulary/relators/cnd> ;
+		a bf:Role ;
+		rdfs:label "conductor" .
+		
+<http://id.loc.gov/authorities/genreForms/gf2014026725> ;
+  a bf:GenreForm ;
+  rdfs:label "Concertos" .
+		
+<http://id.loc.gov/vocabulary/languages/zxx> ;
+  a bf:Language ;
+  rdfs:label "No language content" .
+  
+<http://rdaregistry.info/termList/typeRec/1001> ;
+  a bf:RecordingMedium ;
+  rdfs:value "analog" .
+  
+<http://rdaregistry.info/termList/configPlayback/1002> ;
+  a bf:PlaybackCharacteristic ;
+  rdfs:value "stereo" .
+  
+<#Saariaho_instance1>
+  a  bf:Instance ;
+  bf:hasItem  <Saariaho_item1> ;
+  bf:adminMetadata  <Saariaho_admin1> ;
+  bf:title [
+    a  bf:Title ;
+    bf:mainTitle "Amour de loin" ;
+    pmo:origin [
+        a pmo:Origin ;
+        rdf:value "container" ;
+      ] ;
+    ]
+  bf:responsibilityStatement "Kaija Saariaho" ;
+   bf:identifiedBy [
+		a bf:MusicPublisherNumber ;
+		rdf:value "HMC 801937" ;
+	] ;
+  bf:identifiedBy [
+		a bf:MusicPublisherNumber ;
+		rdf:value "HMC 801938" ;
+	] ;
+	bf:identifiedBy [
+		a bf:MusicPublisherNumber ;
+		rdf:value "HMC 801937-38" ;
+	] ;
+	bf:provisionActivity [
+		a bf:ProvisionActivity, bf:Publication ;
+		bf:agent <http://id.loc.gov/authorities/names/n90718974> ;
+		bf:date "2009" ;
+		bf:place <http://id.loc.gov/authorities/names/n81066146> ;
+	] ;
+	bf:extent	"2 audio discs" ;
+	bf:dimensions "4 3/4 in." ;
+  bf:media <http://id.loc.gov/vocabulary/mediaTypes/s> ;
+  bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  
+  <http://id.loc.gov/authorities/names/n90718974> [
+    a  bf:Agent, bf:Organization ;
+    bf:role <http://id.loc.gov/vocabulary/relators/pbl> ;
+  ] ;
+  
+<http://id.loc.gov/authorities/names/n81066146> [
+   a bf:Place ;
+   rdfs:label "Phoenix, Ariz." ;
+  
+<http://id.loc.gov/vocabulary/mediaTypes/s> ;
+  a bf:Media ;
+  rdfs:label "audio" ;
+  
+<http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  a bf:Carrier ;
+  rdfs:label "audio disc" ;
+  bf:soundCharacteristic <http://www.ld4p.org/ontologies.owl/performedMusic#MPS1.4> ;
+  bf:soundCharacteristic <http://rdaregistry.info/termList/configPlayback/1002> ;
+  bf:soundCharacteristic <http://rdaregistry.info/termList/recMedium/1003> ;
+  bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1001> ;
+  pmo:hasDiscType <http://www.ld4p.org/ontologies.owl/performedMusic#CdAudio ;
+  bf:note [
+    a bf:Note ;
+    rdf:value "These hybrid super audio CDs (stereo and multi-channel) can be played on any standard compact disc player." ;
+] ;
+	
+<http://www.ld4p.org/ontologies.owl/performedMusic#MPS1.4> ;
+	a bf:SoundCharacteristic, bf:PlaybackChannels ;
+	rdfs:label "stereo" ;
+] .
+
+<http://rdaregistry.info/termList/recMedium/1003> ;
+	a bf:SoundCharacteristic, bf:RecordingMedium ;
+	rdfs:value "optical" .
+	
+<http://rdaregistry.info/termList/fileType/1001> ;
+	a bf:SoundCharacteristic, bf:FileType ;
+	rdfs:value "audio file" .
+
+<http://www.ld4p.org/ontologies.owl/performedMusic#CdAudio> ;
+	a pmo:AudioDiscType ;
+	rdfs:value "CD audio" .
+	
+<#Saariaho_item1>
+	a 	bf:Item ;
+	bf:adminMetadata	<#Saariaho_admin1> ;
+	bf:heldBy       "CSt" ;
+	bf:barcode      "1234567890111" ;
+	bf:shelfmark	"MCD 19301" .
+
+<Saariaho_admin1>
+	bf:assigner			"nel" ;
+	bf:descriptionConventions 	"rda" ;
+	bf:descriptionLanguage	[
+		a 		bf:Language ;
+		bf:language 	<http://id.loc.gov/vocabulary/languages/eng> 
+		] ;
+	bf:creationdate		"2016-12-20". 	
+
+	'''
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
